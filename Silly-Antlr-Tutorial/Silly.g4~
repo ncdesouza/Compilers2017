@@ -5,7 +5,6 @@ grammar Silly;
 
 }
 
-/* may or may not need this */
 @members {
 	
 }
