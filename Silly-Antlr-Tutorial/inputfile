@@ -1,0 +1,6 @@
+variable Hello;
+variable World;
+make Hello 5;
+repeat 3 show Hello;
+make World 10;
+repeat Hello show World;
