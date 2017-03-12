@@ -1,7 +1,7 @@
 grammar Silly;
 
 @header {
-import java.util.TreeMap;
+
 }
 
 @members {
@@ -9,7 +9,7 @@ import java.util.TreeMap;
 }
 
 start 
-	: {System.out.println("public class SillyOut {\n\tpublic static void main(String[] args){");}( statement {System.out.println("\t\t" + $statement.s+"\n");})+ EOF {System.out.println("\n\t}\n}");} EOF
+	: {System.out.println("public class SillyOut {\n\tpublic static void main(String[] args){");}( statement {System.out.println("\t\t" + $statement.s+"\n");})+ {System.out.println("\n\t}\n}");}
 	;	
 
 statement returns [String s]
@@ -21,8 +21,7 @@ statement returns [String s]
 var_decl returns [String s]
 	: 'variable' ID ';' 
 		{ 
-			$s = "int "+$ID.getText()+";";
-			
+			$s = "int "+$ID.getText()+";";	
 		}
 	;
 
