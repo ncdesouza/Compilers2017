@@ -2,7 +2,7 @@
 
 You are going to create a lexer, parser, and compiler for a new language named A2!
 
-Your compiler will take A2 source code, and output Java code that could then be compiled and ran without errors. If there is an error in the A4 source code, then the Parser will print an error (Antlr handles that for you).
+Your compiler will take A2 source code, and output Java code that could then be compiled and ran without errors. If there is an error in the g4 source code, then the Parser will print an error (Antlr handles that for you).
 
 ## Files Provided
 
