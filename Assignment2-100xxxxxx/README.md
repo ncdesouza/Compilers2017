@@ -226,7 +226,7 @@ If you implemented loop correctly, then you can implement check as well! Go for 
 
 You will need to pass `make test6`.
 
-### 7. Meet all of the submission guidelines
+### 8. Meet all of the submission guidelines
 
 Submission Guidelines:
 
