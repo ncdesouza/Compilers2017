@@ -2,6 +2,8 @@ all:
 	java -cp ./antlr-4.6-complete.jar:. org.antlr.v4.Tool -no-listener -no-visitor *.g4
 	javac -cp ./antlr-4.6-complete.jar:. *.java
 
+test: test1 test2 test3 test4 test5 test6
+
 test1: 
 	java -cp ./antlr-4.6-complete.jar:. ParseFile test/inputfile1 >Test11.java
 	javac Test11.java
@@ -13,7 +15,6 @@ tree1:
 
 tokens1:
 	java -cp ./antlr-4.6-complete.jar:. org.antlr.v4.runtime.misc.TestRig A2 start -tokens <test/inputfile1
-
 
 test2:
 	java -cp ./antlr-4.6-complete.jar:. ParseFile test/inputfile3 >Test21.java
